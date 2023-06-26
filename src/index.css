@@ -1,0 +1,85 @@
+body, html, #root {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: black;
+    opacity: 0.5;
+    color: white;
+    padding: 5px;
+}
+
+.header {
+    margin-top:0;
+    background: #1c1c1c;
+    padding: 15px 5px;
+    width: 100%;
+}
+.menu {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    padding-left: 10px;
+}
+
+    .menu > li {
+        display: inline-block;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+.title {
+    float: left;
+    margin-left: 0;
+    font-size: 21px;
+    font-weight: 600;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+.wallet {
+    float: right;
+    margin-right: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #999;
+    padding-right: 25px;
+}
+.mint {
+    width: 25%;
+    text-transform:uppercase;
+    color:orange;
+    font-weight:400;
+    cursor:pointer;
+}
+p {
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+}
+
+.minted {
+    max-width:300px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .wallet {
+        max-width: 150px;
+        overflow: hidden;
+        white-space: nowrap; /* Don't forget this one */
+        text-overflow: ellipsis;
+    }
+
+    .minted {
+        max-width: 80%;
+    }
+}
